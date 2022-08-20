@@ -1,0 +1,26 @@
+:root {
+    --main-font-family: 'Roboto', sans-serif;
+
+    --main-color: #212121;
+    --secondary-color: #757575;
+    --accent-color: #2196F3;
+    --light-color: #FFFFFF;
+    --footer__contacts: rgba(255, 255, 255, 0.6);
+
+    --dark-background: #2F303A;
+    --light-background: #FFFFFF;
+    --accent-background: #F5F4FA;
+    --hero__button-hover: #188CE8;
+    --header-border: #ECECEC;
+    --projects-border: #EEEEEE;
+    --features-list__icon-background: #F5F4FA;
+    --team-clients-list__icons-link: #AFB1B8;
+    --footer-socials-link: rgba(255, 255, 255, 0.1);
+    --work-list__text-background: rgba(47, 48, 58, 0.8);
+    --portfolio-overlay-bg: rgba(33, 150, 243, 0.9);
+    --backdrop-background: rgba(0, 0, 0, 0.2);
+    --modal-form-placeholder: rgba(117, 117, 117, 0.5);
+
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

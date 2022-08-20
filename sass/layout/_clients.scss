@@ -1,0 +1,37 @@
+.clients__title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.clients-list__item {
+    width: 170px;
+    height: 92px;
+}
+
+.clients-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    fill: var(--team-clients-list__icons-link);
+
+    transition: fill var(--transition-duration) var(--transition-timing-function),
+                border-color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+            fill: var(--accent-color);
+            border-color: var(--accent-color);
+    }
+}
+
