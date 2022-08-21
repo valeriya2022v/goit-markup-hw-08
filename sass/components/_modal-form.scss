@@ -35,14 +35,12 @@
 
 .modal-form__input {
     display: block;
-    padding-left: 42px;
+    padding-left: 40px;
     width: 100%;
     min-height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-
     transition: border-color var(--transition-duration) var(--transition-timing-function);
-
     &:focus {
             border-color: var(--accent-color);
             outline: none;
@@ -54,9 +52,7 @@
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-
     transition: fill var(--transition-duration) var(--transition-timing-function);
-
     .modal-form__input:focus + & {
             fill: var(--accent-color);
     }
@@ -77,14 +73,11 @@
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-
     transition: border-color var(--transition-duration) var(--transition-timing-function);
-
     &:focus {
             border-color: var(--accent-color);
             outline: none;
     }
-
     &::placeholder {
             color: var(--modal-form-placeholder);
             font-size: 12px;
@@ -93,62 +86,81 @@
     }
 }
 
-.modal-form__check-desc {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-color);
+ .modal-form__check-desc {
+    overflow: visible;
+     margin-bottom: 30px;
+     letter-spacing: 0.03em;
+     color: var(--secondary-color);
 
-    &::before {
-            display: block;
-            content: "";
-            border: 2px solid var(--main-color);
-            margin-right: 8px;
-            width: 16px;
-            height: 15px;
-            border-radius: 2px;
-            transition: background-image var(--transition-duration) var(--transition-timing-function);
+     &::before {
+         display: inline-block;
+         content: "";
+         border: 2px solid var(--main-color);
+         margin-right: 8px;
+         width: 16px;
+         height: 15px;
+         border-radius: 2px;
+         transition: background-image var(--transition-duration) var(--transition-timing-function);
+     }
+     .modal-form__checkbox:checked + &::before {
+             background-color: var(--accent-color);
+             background-image: url("../images/icon-check.svg");
+             background-size: contain;
+             background-position: center;
+             border-color: var(--accent-color);
+             outline: none;
+     }
+     .modal-form__checkbox:focus + &::before {
+             outline: 2px solid rgba(0, 0, 255, 0.5);
+     }
+ }
+
+ .modal-form__btn_submit {
+     padding: 10px 52px;
+     min-width: 200px;
+     min-height: 50px;
+     align-self: center;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border-color: transparent;
+     border-radius: 4px;
+     background-color: var(--accent-color);
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 1.87;
+     letter-spacing: 0.06em;
+     color: var(--light-color);
+
+     transition: background-color var(--transition-duration) var(--transition-timing-function);
+
+     &:hover,
+     &:focus {
+         background-color: var(--hero__button-hover);
+     }
+ }
+
+ .modal-form__link {
+     color: var(--accent-color);
+ }
+
+@media screen and (max-width:1199px) {
+    .modal-form__text {
+        width: 370px;
+        height: 60px;
     }
 
-    .modal-form__checkbox:checked + &::before {
-            background-color: var(--accent-color);
-            background-image: url("../images/icon-check.svg");
-            background-size: contain;
-            background-position: center;
-            border-color: var(--accent-color);
-            outline: none;
-    }
+    .modal-form__check-desc {
+        font-size: 12px;
+        line-height: 1.16;
+        
+    }    
+}
 
-    .modal-form__checkbox:focus + &::before {
-            outline: 2px solid rgba(0, 0, 255, 0.5);
+@media screen and (min-width:1200px) {
+    .modal-form__check-desc {
+        font-size: 14px;
+        line-height: 1.71;
+        
     }
 }
 
-.modal-form__btn_submit {
-    padding: 10px 52px;
-    min-width: 200px;
-    min-height: 50px;
-    align-self: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-color: transparent;
-    border-radius: 4px;
-    background-color: var(--accent-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--light-color);
 
-    transition: background-color var(--transition-duration) var(--transition-timing-function);
-
-    &:hover,
-    &:focus {
-        background-color: var(--hero__button-hover);
-    }
-}
-
-.modal-form__link {
-    color: var(--accent-color);
-}

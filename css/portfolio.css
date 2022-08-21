@@ -87,19 +87,19 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 .logo {
@@ -134,7 +134,7 @@ body {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .nav-list {
     display: none;
   }
@@ -149,7 +149,7 @@ body {
     transition: fill var(--transition-duration) var(--transition-timing-function);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .mobile-menu {
     display: none;
   }

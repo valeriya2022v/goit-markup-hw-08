@@ -1,6 +1,4 @@
 .modal {
-    width: 528px;
-    height: 581px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,4 +30,20 @@
         fill: var(--accent-color);
     }
 }
+
+@media screen and (max-width:1199) {
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+}
+
+@media screen and (min-width:1200) {
+    .modal {
+        width: 528px;
+        height: 581px;
+    }
+}
+
+
 
