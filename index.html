@@ -63,8 +63,8 @@
                     </div>
                 <div class="mobile-menu-wrapper_contacts">
                     <ul class="list mobile-menu-contacts">
-                        <li class="mobile-menu-contacts__item mobile-menu-contacts__item_tel"><a class="link mobile-menu-contacts__link" tel="+380961111111">+38 096 111 11 11</a></li>
-                        <li class="mobile-menu-contacts__item mobile-menu-contacts__item_mail"><a class="link mobile-menu-contacts__link" mail="info@devstudio.com"></a>info@devstudio.com</li>
+                        <li class="mobile-menu-contacts__item mobile-menu-contacts__item_tel"><a class="link mobile-menu-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="mobile-menu-contacts__item mobile-menu-contacts__item_mail"><a class="link mobile-menu-contacts__link" href="mailto:info@devstudio.com"></a>info@devstudio.com</li>
                     </ul>        
                 
                     <ul class="list mobile-menu-socials">
@@ -146,7 +146,7 @@
             </ul>
             </div>
         </section>
-        <!-- <section class="work">
+        <section class="work">
             <div class="container">
             <h2 class="work__title">Чим ми займаємося</h2>
             <ul class="list work-list">
@@ -171,12 +171,36 @@
             </ul>
             </div>
         </section>
-        --<section class="team section">
+       
+       
+       
+        <section class="team section">
             <div class="container">
             <h2 class="team__title">Наша команда</h2>
             <ul class="list team-list">
                 <li class="team-list__item">
-                    <img src="./images/our-team/product-designer.jpg" alt="Product Designer" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/our-team/product-designer-desktop.webp 1x, ./images/our-team/product-designer-desktop@2x.webp 2x" 
+                                media="(min-width: 1200px)"
+                                type="image/webp" />
+                        <source srcset="./images/our-team/product-designer-desktop.jpg 1x, ./images/our-team/product-designer-desktop@2x.jpg 2x" 
+                                media="(min-width: 1200px)" />
+                        
+                        <source srcset="./images/our-team/product-designer-tablet.webp 1x, ./images/our-team/product-designer-tablet@2x.webp 2x" 
+                                media="(min-width: 768px)"
+                                type="image/webp" />
+                        <source srcset="./images/our-team/product-designer-tablet.jpg 1x, ./images/our-team/product-designer-tablet@2x.jpg 2x" 
+                                media="(min-width: 768px)" />
+                        
+                        <source srcset="./images/our-team/product-designer-mobile.webp 1x, ./images/our-team/product-designer-mobile@2x.webp 2x" 
+                                media="(max-width: 767px)"
+                                type="image/webp" />
+                        <source srcset="./images/our-team/product-designer-mobile.jpg 1x, ./images/our-team/product-designer-mobile@2x.jpg 2x" 
+                                media="(max-width: 767px)" />
+
+                        <img src="./images/our-team/product-designer.jpg" alt="Product Designer">
+                    </picture>
+                    
                     <div class="team-card-content-wrapper">
                     <h3 class="team-list__member">Ігор Дем'яненко</h3>
                     <p lang="en" class="team-list__position">Product Designer</p>
@@ -213,9 +237,31 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./images/our-team/frontend-developer.jpg" alt="Frontend Developer" width="270" height="260">
+                    <picture>
+                        <source
+                            srcset="./images/our-team/frontend-developer-desktop.webp 1x, ./images/our-team/frontend-developer-desktop@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp" />
+                        <source
+                            srcset="./images/our-team/frontend-developer-desktop.jpg 1x, ./images/our-team/frontend-developer-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                    
+                        <source
+                            srcset="./images/our-team/frontend-developer-tablet.webp 1x, ./images/our-team/frontend-developer-tablet@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp" />
+                        <source
+                            srcset="./images/our-team/frontend-developer-tablet.jpg 1x, ./images/our-team/frontend-developer-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                    
+                        <source
+                            srcset="./images/our-team/frontend-developer-mobile.webp 1x, ./images/our-team/frontend-developer-mobile@2x.webp 2x"
+                            media="(max-width: 767px)" type="image/webp" />
+                        <source
+                            srcset="./images/our-team/frontend-developer-mobile.jpg 1x, ./images/our-team/frontend-developer-mobile@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                    <img src="./images/our-team/frontend-developer.jpg" alt="Frontend Developer">
+                    </picture>
                     <div class="team-card-content-wrapper">
-                    <h3 class="team-list__member">Ольга Репіна</h3>
+                    <h3 class="team-list__member">Ольга Рєпіна</h3>
                     <p lang="en" class="team-list__position">Frontend Developer</p>
                     <ul class="list team-icons-list">
                         <li class="team-icons-list__item">
@@ -250,7 +296,29 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./images/our-team/marketing.jpg" alt="Marketing" width="270" height="260">
+                    <picture>
+                        <source
+                            srcset="./images/our-team/marketing-desktop.webp 1x, ./images/our-team/marketing-desktop@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp" />
+                        <source
+                            srcset="./images/our-team/marketing-desktop.jpg 1x, ./images/our-team/marketing-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                    
+                        <source
+                            srcset="./images/our-team/marketing-tablet.webp 1x, ./images/our-team/marketing-tablet@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp" />
+                        <source
+                            srcset="./images/our-team/marketing-tablet.jpg 1x, ./images/our-team/marketing-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                    
+                        <source
+                            srcset="./images/our-team/marketing-mobile.webp 1x, ./images/our-team/marketing-mobile@2x.webp 2x"
+                            media="(max-width: 767px)" type="image/webp" />
+                        <source
+                            srcset="./images/our-team/marketing-mobile.jpg 1x, ./images/our-team/marketing-mobile@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                    <img src="./images/our-team/marketing.jpg" alt="Marketing">
+                    </picture>
                     <div class="team-card-content-wrapper">
                     <h3 class="team-list__member">Микола Тарасов</h3>
                     <p lang="en" class="team-list__position">Marketing</p>
@@ -287,7 +355,23 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./images/our-team/ui-designer.jpg" alt="UI Designer" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/our-team/ui-designer-desktop.webp 1x, ./images/our-team/ui-designer-desktop@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp" />
+                        <source srcset="./images/our-team/ui-designer-desktop.jpg 1x, ./images/our-team/ui-designer-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                    
+                        <source srcset="./images/our-team/ui-designer-tablet.webp 1x, ./images/our-team/ui-designer-tablet@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp" />
+                        <source srcset="./images/our-team/ui-designer-tablet.jpg 1x, ./images/our-team/ui-designer-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                    
+                        <source srcset="./images/our-team/ui-designer-mobile.webp 1x, ./images/our-team/ui-designer-mobile@2x.webp 2x"
+                            media="(max-width: 767px)" type="image/webp" />
+                        <source srcset="./images/our-team/ui-designer-mobile.jpg 1x, ./images/our-team/ui-designer-mobile@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                    <img src="./images/our-team/ui-designer.jpg" alt="UI Designer">
+                    </picture>
                     <div class="team-card-content-wrapper">
                     <h3 class="team-list__member">Михайло Єрмаков</h3>
                     <p lang="en" class="team-list__position">UI Designer</p>
@@ -326,7 +410,7 @@
             </ul>
             </div>
         </section>     
-        <section class="section clients">
+        <!-- <section class="section clients">
             <div class="container">
                 <h2 class="title clients__title">Постійні клієнти</h2>
                 <ul class="list clients-list">
