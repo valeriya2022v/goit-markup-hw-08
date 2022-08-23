@@ -1,6 +1,6 @@
 .clients__title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .clients-list {
@@ -10,28 +10,63 @@
     gap: 30px;
 }
 
-.clients-list__item {
-    width: 170px;
-    height: 92px;
-}
-
 .clients-list__link {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: 100%;
     height: 100%;
     fill: var(--team-clients-list__icons-link);
-
     transition: fill var(--transition-duration) var(--transition-timing-function),
-                border-color var(--transition-duration) var(--transition-timing-function);
+        border-color var(--transition-duration) var(--transition-timing-function);
 
     &:hover,
     &:focus {
-            fill: var(--accent-color);
-            border-color: var(--accent-color);
+        fill: var(--accent-color);
+        border-color: var(--accent-color);
     }
 }
+
+.clients-list__icon {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+@media screen and (max-width: 1199px) {
+    .clients-list {
+        flex-wrap: wrap;       
+    }    
+}
+
+@media screen and (max-width: 767px) {   
+    .clients-list__item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+  
+}
+
+@media screen and (min-width: 768px) {  
+    .clients-list__item {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients__title {        
+        margin-bottom: 50px;
+    }
+
+    .clients-list__item {
+        width: 170px;
+        height: 92px;
+    }
+}
+
+
+
+
+
 
