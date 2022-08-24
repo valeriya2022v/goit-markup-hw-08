@@ -150,20 +150,18 @@
     }
 
     .projects-card-content-wrapper {
-        height: 146px;
-        
-}
+        height: 146px;        
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .projects-list__item {
         flex-basis: calc((100% - 60px) / 3);
     }
-
-        .projects-card-content-wrapper {            
-            padding-bottom: 20px;            
-            height: 110px;
-        }
+    .projects-card-content-wrapper {            
+        padding-bottom: 20px;            
+        height: 110px;
+    }
 
 }
 

@@ -126,7 +126,7 @@ body {
   font-size: 36px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
     width: 100%;
@@ -253,7 +253,7 @@ body {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav-list {
     display: none;
   }
@@ -268,7 +268,7 @@ body {
     transition: fill var(--transition-duration) var(--transition-timing-function);
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }

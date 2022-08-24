@@ -36,16 +36,12 @@
     .features-list__subtitle {
         text-align: center;        
         margin-bottom: 10px;
-
     }
 
     .features-list__item:not(:last-child) {
         display: block;        
         margin-bottom: 30px;
-
-    }
-
-    
+    }    
 }
 
 @media screen and (min-width: 768px) {
@@ -57,9 +53,7 @@
 
     .features-list__item {
         flex-basis: calc((100% - 30px) / 2);
-    }
-
-    
+    }   
 
 }
 
@@ -72,5 +66,4 @@
     .features-list__item {
         flex-basis: calc((100% - 90px) / 4);
     }
-
 }
